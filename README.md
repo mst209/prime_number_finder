@@ -2,8 +2,11 @@
 
 ## How to use
 
-Require the prime class.
-Run bundle install
+Run `bundle install`
+
+Modify the `main.rb` file
+
+Run the main file
 ```
-PrimeNumberFinder.find_prime_number(3)
+ruby main.rb
 ```
