@@ -1,0 +1,2 @@
+require_relative 'prime_number_finder'
+PrimeNumberFinder.find_prime_number(3)
