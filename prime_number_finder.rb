@@ -4,10 +4,11 @@ require 'prime'
 require 'async'
 require 'timeout'
 
+# This function finds the largest prime number within a given range
 class PrimeNumberFinder
 
-  def self.find_prime_number(seconds)
-    PrimeNumberFinder.new(seconds).search_for_prime
+  def self.find_largest_prime_number(seconds)
+    PrimeNumberFinder.new(seconds).search_for_largest_prime
   end
 
   def initialize(seconds)
@@ -17,7 +18,7 @@ class PrimeNumberFinder
     @search_fiber = setup_search_fiber
   end
 
-  def search_for_prime
+  def search_for_largest_prime
     begin
       Timeout.timeout(@seconds) do
         while true do
