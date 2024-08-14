@@ -19,7 +19,7 @@ AsyncPrimeNumberFinder -> Largest Prime Found 1136000
 
 Comments: The runtimes of these are pretty similar, given that ruby isn't a natively threaded language. To acheive ideal results it would be best to do this in something designed for concurrenct such as Golang, however the excersize was to show some more advanced ruby skills that i have aquired.
 
-## How to use
+## How to run benchmarks
 
 Run `bundle install`
 

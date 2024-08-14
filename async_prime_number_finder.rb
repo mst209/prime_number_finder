@@ -62,7 +62,7 @@ class PrimeNumberRangeSearch
       @iterator += 1
     end
     @elapsed_time = Async::Clock.now - @start_time
-    #puts "Range Search [#{@min}, #{@max}] took #{@elapsed_time} and returned a largest prime of #{@largest_prime}"
+    puts "Range Search [#{@min}, #{@max}] took #{@elapsed_time} and returned a largest prime of #{@largest_prime}"
     @largest_prime
   end
   
